@@ -29,7 +29,7 @@ def test_guest_can_go_to_register_form(browser):
     page.should_be_login_form()
 
 def test_guest_can_go_to_login_url(browser):
-    link = "http://selenium1py.pythonanywhere.com/ru/accounts"
+    link = "http://selenium1py.pythonanywhere.com/ru/accounts/login/"
     page = LoginPage(browser, link)
     page.open()
     page.should_be_login_url()
